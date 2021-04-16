@@ -1,0 +1,50 @@
+@import libs/_reset
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap')
+@import blocks/_hamburger
+
+html
+    font-family: 'Roboto', sans-serif
+body
+    background-color: hsl(210, 36%, 96%)
+\:root
+    --hover-color: #49a6e9
+.nav
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+    background-color: #fff
+    &__socials
+    &__social
+        margin-right: 10px
+        color: var(--hover-color)
+    &__social i
+        transition: all 0.3s ease-in-out
+        &:hover
+            transform: scale(1.2)
+.nav-container
+    max-width: 960px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 0
+.menu
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__link
+        text-decoration: none
+        margin-right: 15px
+        letter-spacing: 3px
+        font-size: 20px
+        color: hsl(209, 34%, 30%)
+        transition: all 0.3s ease-in-out
+        &:hover
+            color: var(--hover-color)
+    
+
+@import _media.sass
+
+.show
+    left: 0
+    visibility: visible
+    opacity: 1
